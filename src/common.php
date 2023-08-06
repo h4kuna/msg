@@ -4,16 +4,6 @@ if (!extension_loaded('sysvmsg')) {
 	throw new \RuntimeException('Let\'s install sysvmsg extension.');
 }
 
-function queueKey(): int
-{
-	if (isset($_SERVER['argv'][1]) && is_numeric($_SERVER['argv'][1])) {
-		return (int) $_SERVER['argv'][1];
-	}
-	return 1;
-}
-
-define('QUEUE_KEY', queueKey());
-
 interface MsgConfig
 {
 	const NO_SERIALIZE = false;
@@ -27,7 +17,8 @@ interface MsgConfig
  */
 function queue()
 {
-	return msg_get_queue(QUEUE_KEY, 0666);
+	$key = ftok(__FILE__, 'a');
+	return msg_get_queue($key, 0666);
 }
 
 final class SendException extends \RuntimeException
@@ -78,10 +69,12 @@ function receive(): array
 	];
 }
 
+
 function remove(): void
 {
 	msg_remove_queue(queue());
 }
+
 
 function logger(string $name, string $message): void
 {
