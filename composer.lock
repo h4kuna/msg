@@ -1,0 +1,352 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0a50ae41e08bab8abebc3ad304a4ec56",
+    "packages": [
+        {
+            "name": "h4kuna/data-type",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4kuna/data-type.git",
+                "reference": "147329759ba08c3d44289edee62a86b26c4c3b4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4kuna/data-type/zipball/147329759ba08c3d44289edee62a86b26c4c3b4d",
+                "reference": "147329759ba08c3d44289edee62a86b26c4c3b4d",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^3.0 || ^4.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "nette/tester": "^2.4",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-strict-rules": "^1.4",
+                "tracy/tracy": "^2.9"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "h4kuna\\DataType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Matějček",
+                    "email": "milan.matejcek@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Basic data type, int, float, string, set, gps",
+            "homepage": "https://github.com/h4kuna/data-type",
+            "support": {
+                "issues": "https://github.com/h4kuna/data-type/issues",
+                "source": "https://github.com/h4kuna/data-type/tree/v3.0.2"
+            },
+            "time": "2023-08-07T22:15:11+00:00"
+        },
+        {
+            "name": "h4kuna/dir",
+            "version": "v0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4kuna/dir.git",
+                "reference": "879b7d1c5634d90819529dc51dc87a89133fd19a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4kuna/dir/zipball/879b7d1c5634d90819529dc51dc87a89133fd19a",
+                "reference": "879b7d1c5634d90819529dc51dc87a89133fd19a",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^2.2 || ^3.0 || ^4.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "nette/tester": "^2.4",
+                "phpstan/phpstan-strict-rules": "^1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "h4kuna\\Dir\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Matějček",
+                    "email": "milan.matejcek@gmail.com"
+                }
+            ],
+            "description": "Create easily directories",
+            "support": {
+                "issues": "https://github.com/h4kuna/dir/issues",
+                "source": "https://github.com/h4kuna/dir/tree/v0.1.4"
+            },
+            "time": "2023-08-07T18:32:52+00:00"
+        },
+        {
+            "name": "h4kuna/memoize",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4kuna/memoize.git",
+                "reference": "c7f675b215ffa9226de8a8ef876321311ce8168d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4kuna/memoize/zipball/c7f675b215ffa9226de8a8ef876321311ce8168d",
+                "reference": "c7f675b215ffa9226de8a8ef876321311ce8168d",
+                "shasum": ""
+            },
+            "require-dev": {
+                "nette/tester": "^2.0",
+                "phpstan/phpstan": "^1.9"
+            },
+            "type": "tool",
+            "autoload": {
+                "psr-4": {
+                    "h4kuna\\Memoize\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Matějček",
+                    "email": "milan.matejcek@gmail.com"
+                }
+            ],
+            "description": "Provide cache to memory for your class.",
+            "support": {
+                "issues": "https://github.com/h4kuna/memoize/issues",
+                "source": "https://github.com/h4kuna/memoize/tree/v0.1.3"
+            },
+            "time": "2022-12-09T06:45:13+00:00"
+        },
+        {
+            "name": "h4kuna/queue",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4kuna/queue.git",
+                "reference": "7327a8050833ee70b9193bcc767300011753c77d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4kuna/queue/zipball/7327a8050833ee70b9193bcc767300011753c77d",
+                "reference": "7327a8050833ee70b9193bcc767300011753c77d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sysvmsg": "*",
+                "h4kuna/data-type": "^v3.0.2",
+                "h4kuna/dir": "^0.1.3",
+                "h4kuna/memoize": "^0.1",
+                "h4kuna/serialize-polyfill": "^0.2.1",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "nette/tester": "^2.3",
+                "phpstan/phpstan": "^1.9",
+                "phpstan/phpstan-strict-rules": "^1.4",
+                "tracy/tracy": "^2.7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "h4kuna\\Queue\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Matějček",
+                    "email": "milan.matejcek@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "System V message queue in php.",
+            "homepage": "https://github.com/h4kuna/queue",
+            "support": {
+                "issues": "https://github.com/h4kuna/queue/issues",
+                "source": "https://github.com/h4kuna/queue/tree/master"
+            },
+            "time": "2023-08-08T13:48:43+00:00"
+        },
+        {
+            "name": "h4kuna/serialize-polyfill",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4kuna/serialize-polyfill.git",
+                "reference": "dbda0e2b45fd5a201a156f25e984cdc5a4e86395"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4kuna/serialize-polyfill/zipball/dbda0e2b45fd5a201a156f25e984cdc5a4e86395",
+                "reference": "dbda0e2b45fd5a201a156f25e984cdc5a4e86395",
+                "shasum": ""
+            },
+            "require-dev": {
+                "nette/tester": "^2.4",
+                "phpstan/phpstan": "^1.9",
+                "tracy/tracy": "^2.9"
+            },
+            "suggest": {
+                "ext-igbinary": "to use efficient serialization",
+                "ext-mbstring": "for check errors by igbinary",
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "setup.php"
+                ],
+                "psr-4": {
+                    "h4kuna\\Serialize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Matějček",
+                    "email": "milan.matejcek@gmail.com"
+                }
+            ],
+            "description": "Provide methods for serialization and use igbinary if is available.",
+            "support": {
+                "issues": "https://github.com/h4kuna/serialize-polyfill/issues",
+                "source": "https://github.com/h4kuna/serialize-polyfill/tree/v0.2.1"
+            },
+            "time": "2022-12-19T16:16:47+00:00"
+        },
+        {
+            "name": "nette/utils",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "9124157137da01b1f5a5a22d6486cb975f26db7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/9124157137da01b1f5a5a22d6486cb975f26db7e",
+                "reference": "9124157137da01b1f5a5a22d6486cb975f26db7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0 <8.4"
+            },
+            "conflict": {
+                "nette/finder": "<3",
+                "nette/schema": "<1.2.2"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "dev-master",
+                "nette/tester": "^2.5",
+                "phpstan/phpstan": "^1.0",
+                "tracy/tracy": "^2.9"
+            },
+            "suggest": {
+                "ext-gd": "to use Image",
+                "ext-iconv": "to use Strings::webalize(), toAscii(), chr() and reverse()",
+                "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+                "ext-json": "to use Nette\\Utils\\Json",
+                "ext-mbstring": "to use Strings::lower() etc...",
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()",
+                "ext-xml": "to use Strings::length() etc. when mbstring is not available"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "array",
+                "core",
+                "datetime",
+                "images",
+                "json",
+                "nette",
+                "paginator",
+                "password",
+                "slugify",
+                "string",
+                "unicode",
+                "utf-8",
+                "utility",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v4.0.1"
+            },
+            "time": "2023-07-30T15:42:21+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "h4kuna/queue": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">= 8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

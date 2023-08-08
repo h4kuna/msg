@@ -1,14 +1,20 @@
 <?php declare(strict_types=1);
 
-require __DIR__ . '/src/common.php';
+use h4kuna\DataType;
+use h4kuna\Queue\Exceptions;
 
-do {
+require __DIR__ . '/src/common.php';
+$queue = createQueue();
+$queue->restore();
+while (true) {
 	try {
-		$message = receive();
-		break;
-	} catch (ReceiveException $e) {
+		$message = $queue->consumer()->receive();
+		logger('received', sprintf('Message: %s, Type: %s', $message->message, $message->type));
+		echo $message->message . PHP_EOL;
+		sleep((int) $message->message);
+	} catch (Exceptions\ReceiveException $e) {
 		logger('msg_receive', $e->getMessage());
 	}
-} while (1);
+}
 
-logger('received', sprintf('Message: %s, Type: %s', $message['message'], $message['type']));
+
