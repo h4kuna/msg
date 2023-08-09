@@ -13,6 +13,6 @@
     ],
     "require": {
         "php": ">= 8.0",
-        "h4kuna/queue": "dev-master"
+        "h4kuna/queue": "^0.1.4"
     }
 }

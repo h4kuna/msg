@@ -4,60 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a50ae41e08bab8abebc3ad304a4ec56",
+    "content-hash": "3def811737eab5569ca15eb59ce515fd",
     "packages": [
-        {
-            "name": "h4kuna/data-type",
-            "version": "v3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/h4kuna/data-type.git",
-                "reference": "147329759ba08c3d44289edee62a86b26c4c3b4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/h4kuna/data-type/zipball/147329759ba08c3d44289edee62a86b26c4c3b4d",
-                "reference": "147329759ba08c3d44289edee62a86b26c4c3b4d",
-                "shasum": ""
-            },
-            "require": {
-                "nette/utils": "^3.0 || ^4.0",
-                "php": ">=8.0"
-            },
-            "require-dev": {
-                "nette/tester": "^2.4",
-                "phpstan/phpstan": "^1.8",
-                "phpstan/phpstan-strict-rules": "^1.4",
-                "tracy/tracy": "^2.9"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
-                "psr-4": {
-                    "h4kuna\\DataType\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Matějček",
-                    "email": "milan.matejcek@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Basic data type, int, float, string, set, gps",
-            "homepage": "https://github.com/h4kuna/data-type",
-            "support": {
-                "issues": "https://github.com/h4kuna/data-type/issues",
-                "source": "https://github.com/h4kuna/data-type/tree/v3.0.2"
-            },
-            "time": "2023-08-07T22:15:11+00:00"
-        },
         {
             "name": "h4kuna/dir",
             "version": "v0.1.4",
@@ -146,21 +94,20 @@
         },
         {
             "name": "h4kuna/queue",
-            "version": "dev-master",
+            "version": "v0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h4kuna/queue.git",
-                "reference": "7327a8050833ee70b9193bcc767300011753c77d"
+                "reference": "767dd341c858960a1bd835b06e5f9f7edcd31c0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h4kuna/queue/zipball/7327a8050833ee70b9193bcc767300011753c77d",
-                "reference": "7327a8050833ee70b9193bcc767300011753c77d",
+                "url": "https://api.github.com/repos/h4kuna/queue/zipball/767dd341c858960a1bd835b06e5f9f7edcd31c0a",
+                "reference": "767dd341c858960a1bd835b06e5f9f7edcd31c0a",
                 "shasum": ""
             },
             "require": {
                 "ext-sysvmsg": "*",
-                "h4kuna/data-type": "^v3.0.2",
                 "h4kuna/dir": "^0.1.3",
                 "h4kuna/memoize": "^0.1",
                 "h4kuna/serialize-polyfill": "^0.2.1",
@@ -172,7 +119,6 @@
                 "phpstan/phpstan-strict-rules": "^1.4",
                 "tracy/tracy": "^2.7"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -194,9 +140,9 @@
             "homepage": "https://github.com/h4kuna/queue",
             "support": {
                 "issues": "https://github.com/h4kuna/queue/issues",
-                "source": "https://github.com/h4kuna/queue/tree/master"
+                "source": "https://github.com/h4kuna/queue/tree/v0.1.4"
             },
-            "time": "2023-08-08T13:48:43+00:00"
+            "time": "2023-08-08T18:49:52+00:00"
         },
         {
             "name": "h4kuna/serialize-polyfill",
@@ -339,9 +285,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "h4kuna/queue": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
