@@ -5,6 +5,7 @@ use h4kuna\Queue\Exceptions;
 
 require __DIR__ . '/src/common.php';
 $queue = createQueue();
+start:
 $queue->restore();
 while (true) {
 	try {
@@ -14,7 +15,7 @@ while (true) {
 		sleep((int) $message->message);
 	} catch (Exceptions\ReceiveException $e) {
 		logger('msg_receive', $e->getMessage());
+		sleep(10);
+		goto start;
 	}
 }
-
-
