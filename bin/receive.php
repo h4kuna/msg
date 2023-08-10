@@ -1,9 +1,8 @@
 <?php declare(strict_types=1);
 
-use h4kuna\DataType;
 use h4kuna\Queue\Exceptions;
 
-require __DIR__ . '/src/common.php';
+require __DIR__ . '/../src/common.php';
 $queue = createQueue();
 start:
 $queue->restore();
