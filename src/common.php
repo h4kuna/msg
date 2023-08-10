@@ -9,6 +9,8 @@ if (!extension_loaded('sysvmsg')) {
 
 require __DIR__ . '/../vendor/autoload.php';
 
+Tracy\Debugger::enable(false, __DIR__ . '/temp');
+
 function createQueue(): Queue\Queue
 {
 	$tempDir = (new Dir\Dir(__DIR__ . '/temp'))->create();
