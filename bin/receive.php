@@ -14,7 +14,9 @@ while (true) {
 		sleep((int) $message->message);
 	} catch (Exceptions\ReceiveException $e) {
 		logger('msg_receive', $e->getMessage());
-		sleep(10);
+		error_get_last() && logger('msg_receive', error_get_last()['message']);
+		error_clear_last();
+		sleep(1);
 		goto start;
 	}
 }
