@@ -2,3 +2,4 @@
 /msg_send.log
 /msg_receive.log
 /received.log
+/composer.lock
