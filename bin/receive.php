@@ -6,13 +6,14 @@ require __DIR__ . '/../src/common.php';
 $queue = createQueue();
 $queue->restore();
 
-try {
-	$message = $queue->consumer()->receive();
-	logger('received', sprintf('Message: %s, Type: %s', $message->message, $message->type));
-	echo $message->message . PHP_EOL;
-	sleep((int) $message->message);
-} catch (Exceptions\ReceiveException $e) {
-	sleep(1);
-	throw $e;
+while (true) {
+	try {
+		$message = $queue->consumer()->receive();
+		logger('received', sprintf('Message: %s, Type: %s', $message->message, $message->type));
+		echo $message->message . PHP_EOL;
+		sleep((int) $message->message);
+	} catch (Exceptions\ReceiveException $e) {
+		sleep(1);
+		throw $e;
+	}
 }
-
