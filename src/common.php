@@ -11,14 +11,15 @@ require __DIR__ . '/../vendor/autoload.php';
 define('TEMP_DIR', __DIR__ . '/../temp');
 define('LOG_DIR', __DIR__ . '/../log');
 (new Dir\Dir(LOG_DIR))->create();
-$tempDir = __DIR__ . '/../temp';
 
-Tracy\Debugger::enable(false, TEMP_DIR);
+$emailFile = __DIR__ . '/email';
+$email = is_file($emailFile) ? trim(file_get_contents($emailFile)) : null;
+Tracy\Debugger::enable(false, LOG_DIR, $email);
 
 function createQueue(): Queue\Queue
 {
 	$tempDir = new Dir\Dir(TEMP_DIR);
-	return (new Queue\QueueFactory(tempDir: $tempDir))
+	return (new Queue\QueueFactory(permission: 0o600, tempDir: $tempDir, messageSize: 64))
 		->create('test');
 }
 
